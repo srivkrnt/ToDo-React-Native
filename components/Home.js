@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, ScrollView } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 import TitleBar  from './TitleBar'
 import AddTodo from './AddTodo'
 import CompletedTasks from './CompletedTasks';
@@ -11,14 +11,14 @@ const Home = () => {
   listenToChanges()
   
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <TitleBar/>
       <AddTodo />
       <ScrollView>
         <PendingTasks />
         <CompletedTasks/>
       </ScrollView>                
-    </View>
+    </ScrollView>
   );
 }
 
