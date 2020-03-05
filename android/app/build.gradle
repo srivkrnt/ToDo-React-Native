@@ -143,13 +143,14 @@ android {
         }
     }
     signingConfigs {
-        debug {
-            storeFile file('debug.keystore')
-            storePassword 'android'
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
+        release {
+        storeFile file('todo.keystore')
+        storePassword 'alohomora'
+        keyAlias 'todo'
+        keyPassword 'alohomora'
         }
     }
+
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
